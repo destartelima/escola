@@ -5,7 +5,7 @@ $nome = null;
 $rg = null;
 $cpf = null;
 if(isset($_GET['id'])){
-	if($aluno = $escola->fetchRow('SELECT * FROM aluno WHERE cd_registro='.$_GET['cd_registro'])){
+	if($aluno = $escola->fetchRow('SELECT * FROM aluno WHERE id='.$_GET['id'])){
 		$id = $aluno->id;
 		$nome = $aluno->nome;
 		$rg = $aluno->rg;

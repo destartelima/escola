@@ -6,4 +6,4 @@ foreach($alunos as $aluno){
 	<a href=\"zend-formulario-aluno.php?id=$aluno->id\">editar</a>
 	|<a href=\"deleta-aluno.php?id=$aluno->id\">excluir> </a> </p>";
 }
-print "<a href=\"zend-formulario-aluno.php\">editar</a>";
+print "<a href=\"zend-formulario-aluno.php\">incluir</a>";
