@@ -1,5 +1,5 @@
 <?php
-require('escola.php');
+require('Alunos.php');
 $aluno = array('aluno'=> $_POST('aluno'),'nome'=> $_POST('nome'),
 		'email'=>$_POST('email'));
 
