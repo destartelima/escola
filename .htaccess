@@ -1,0 +1,8 @@
+#habilitando módulo de reescrita do apache
+
+RewriteEngine On
+
+# Reescrevendo regra do Apache
+
+RewriteRule ^([a-z]+)\/([0-9]*)$
+ alunos-$1.php?id=$2

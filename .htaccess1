@@ -1,0 +1,7 @@
+#habilitando módulo de reescrita do apache
+
+RewriteEngine On
+
+# Reescrevendo regra do Apache
+
+RewriteRule .* alunos-listar.php
