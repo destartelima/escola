@@ -1,7 +1,7 @@
 <?php
 require('escola.php');
-$aluno = array('aluno'=> $_POST('aluno'),'rg'=> $_POST('rg'),
-		'cpf'=>$_POST('cpf'));
+$aluno = array('aluno'=> $_POST('aluno'),'nome'=> $_POST('nome'),
+		'email'=>$_POST('email'));
 
 if($aluno->insert('aluno', $aluno)){
 	print "<p> Registro Inserido </p>";

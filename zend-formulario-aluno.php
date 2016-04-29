@@ -30,14 +30,14 @@ $element->setValue($nome);
 $form->addElement($element);
 
 // criar os elementos para 'interpret' e 'jahr'
-$element = new Zend_Form_Element_Text('rg');
-$element->setLabel('RG:');
-$element->setValue($rg);
+$element = new Zend_Form_Element_Text('email');
+$element->setLabel('Email:');
+$element->setValue($email);
 $form->addElement($element);
 
-$element = new Zend_Form_Element_Text('cpf');
-$element->setLabel('CPF: ');
-$element->setValue($cpf);
+$element = new Zend_Form_Element_Text('ano_entrada');
+$element->setLabel('Ano Entrada: ');
+$element->setValue($ano_entrada);
 $form->addElement($element);
 
 $element = new Zend_Form_Element_Submit('Gravar');

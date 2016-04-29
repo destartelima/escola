@@ -1,8 +1,10 @@
 <?php
-require ('Zend/Loader/Autoloader.php');
-Zend_Loader_Autoloader::getInstance();
+require ('autoloader.php');
 
-$config = new Zend_Config_Ini('escola.ini','database');
-$escola = Zend_Db::factory($config->adapter,$config->params);
-$escola->getConnection();
-$escola->setFetchMode(Zend_Db::FETCH_OBJ);
+
+$escola = Zend_Db::factory('PDO_MYSQL', array(
+'hostname'=>'localhost',
+'username'=>'root',
+'password'=>'',
+'dbname'=>'escola'));
+Zend_Db_Table_Abstract::setDefaultAdapter($escola);

@@ -2,8 +2,8 @@
 	require('escola.php');
 	$aluno = array(
 		'nome' => $_POST['nome'],
-		'rg' => $_POST['rg'],
-		'cpf' => $_POST['cpf']
+		'email' => $_POST['email'],
+		'ano_ingresso' => $_POST['ano_ingresso']
 	);
 	if(empty($_POST['id'])){
 		if($escola->insert('aluno', $aluno)){
